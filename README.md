@@ -1,2 +1,0 @@
-# Ristinolla
-Created with CodeSandbox
