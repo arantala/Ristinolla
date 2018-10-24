@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import Board from "./Board";
+import Board from "./components/board";
 
-import "./styles.css";
+import "./styles/styles.css";
 
 class Game extends Component {
   constructor(props) {
