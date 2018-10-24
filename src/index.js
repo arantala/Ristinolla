@@ -50,7 +50,7 @@ class Game extends Component {
     const winner = calculateWinner(current.squares);
 
     const moves = history.map((step, move) => {
-      const desc = move ? "Go to move #" + move : "Go to game start";
+      const desc = move ? "Palaa siirtoon nro. " + move : "Palaa pelin alkuun!";
       return (
         <li key={move}>
           <button onClick={() => this.jumpTo(move)}>{desc}</button>
@@ -60,9 +60,9 @@ class Game extends Component {
 
     let status;
     if (winner) {
-      status = "Winner: " + winner;
+      status = "Voittaja: " + winner;
     } else {
-      status = "Next player: " + (this.state.xIsNext ? "X" : "O");
+      status = "Seuraava pelaaja: " + (this.state.xIsNext ? "X" : "O");
     }
 
     return (
